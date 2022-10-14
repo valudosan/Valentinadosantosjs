@@ -73,3 +73,35 @@ function compras(cartera1, cartera2, campera1, campera2, zapato1, zapato2) {
   resultado = cartera1 + cartera2 + campera1 + campera2 + zapato1 + zapato2;
 }
 */
+
+class Cartera {
+  constructor(tamaño, material, precio, color) {
+    this.tamaño = tamaño;
+    this.material = material;
+    this.precio = parseFloat(precio);
+    this.color = color;
+    this.disponible = true;
+  }
+}
+let cartera1 = new Cartera("chico", "cuero", "15000", "rojo");
+let cartera2 = new Cartera("chico", "cuerina", "12000", "rosa");
+let cartera3 = new Cartera("mediana", "plush", "20000", "azul");
+let cartera4 = new Cartera("grande", "algodon", "25000", "verde");
+
+let Cartera = [cartera1, cartera2, cartera3, cartera4];
+let seleccion = Cartera.find((cartera) => cartera.color == verde);
+let seleccion = Cartera.find((cartera) => cartera.color == azul);
+let seleccion = Cartera.find((cartera) => cartera.color == rosa);
+let seleccion = Cartera.find((cartera) => cartera.color == rojo);
+let seleccion = Cartera.find((cartera) => cartera.material == cuero);
+let seleccion = Cartera.find((cartera) => cartera.material == cuerina);
+let seleccion = Cartera.find((cartera) => cartera.material == algodon);
+let seleccion = Cartera.find((cartera) => cartera.material == plush);
+let seleccion = Cartera.find((cartera) => cartera.tamaño == chico);
+let seleccion = Cartera.find((cartera) => cartera.tamaño == mediana);
+let seleccion = Cartera.find((cartera) => cartera.tamaño == grande);
+let filtrados = Cartera.filter((cartera) => cartera.precio <= 20000);
+let filtrados = Cartera.filter((cartera) => cartera.precio <= 10000);
+let filtrados = Cartera.filter((cartera) => cartera.precio >= 20000);
+
+console.log(filtrados);
