@@ -1,4 +1,6 @@
+//Variables info de usuario
 let nombreyapellido = prompt("ingresar nombre y apellido");
+
 let pregunta = prompt("ingrese su pregunta");
 if (nombreyapellido != "" && pregunta != "") {
   alert(
@@ -14,6 +16,7 @@ if (nombreyapellido != "" && pregunta != "") {
   alert("No ingreso nombre y apellido o pregunta");
 }
 
+//variables ventas y productos
 let comprar = prompt("¿Que desea comprar? Carteras, camperas o zapatos");
 {
   switch (comprar) {
@@ -32,6 +35,7 @@ let comprar = prompt("¿Que desea comprar? Carteras, camperas o zapatos");
   }
 }
 
+//funcion botones de compra e info
 function productos() {
   let boton1 = document.getElementById("uno").value;
   let num1 = parseInt(boton1);
@@ -74,6 +78,7 @@ function compras(cartera1, cartera2, campera1, campera2, zapato1, zapato2) {
 }
 */
 
+//Aca estan los parametros.
 class Cartera {
   constructor(tamaño, material, precio, color) {
     this.tamaño = tamaño;
@@ -83,6 +88,7 @@ class Cartera {
     this.disponible = true;
   }
 }
+//Arrays
 let cartera1 = new Cartera("chico", "cuero", "15000", "rojo");
 let cartera2 = new Cartera("chico", "cuerina", "12000", "rosa");
 let cartera3 = new Cartera("mediana", "plush", "20000", "azul");
