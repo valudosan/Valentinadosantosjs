@@ -4,75 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/objeto.js"></script>
     <title>VDS CLOTHES</title>
   </head>
   <body>
-    <h1>Bienvenidxs a VDS CLOTHES</h1>
-
+    <h1 class="title">Bienvenidxs a VDS CLOTHES</h1>
+    <img src="iconos/carrito1.svg" alt="carrito de compras" class="carrito" />
     <div class="container">
       <div class="contendor__prod">
-        <img
-          src="./Final JS/PRIMER ENTREGA/img/cartera1.jpg"
-          alt="Cartera Roja"
-          class="imagenes"
-        />
-        <p class="parrafo__cartera">Cartera Roja</p>
-        <input type="number" />
+        <img src="img/cartera1.jpg" alt="Cartera Roja" class="imagenes" />
+        <div class="info__prod">
+          <p class="parrafo__cartera" id="nombre">Cartera Roja</p>
+          <p class="parrafo" id="precio">$15000</p>
+          <button type="submit" class="boton comprar" id="agregar">
+            Agregar
+          </button>
+        </div>
       </div>
       <div class="contendor__prod">
-        <img
-          src="./Final JS/PRIMER ENTREGA/img/c2.jpg"
-          alt="Cartera Rosa"
-          class="imagenes"
-        />
-        <p class="parrafo__cartera">Cartera Rosa</p>
-        <input type="number" />
+        <img src="img/c2.jpg" alt="Cartera Rosa" class="imagenes" />
+        <div class="info__prod">
+          <p class="parrafo__cartera" id="nombre" value="Cartera Rosa">
+            Cartera Rosa
+          </p>
+          <p class="parrafo" id="precio" value="$15000">Precio: $15000</p>
+          <button type="submit" class="boton comprar" id="agregar2">
+            Agregar
+          </button>
+        </div>
       </div>
       <div class="contendor__prod">
-        <img
-          src="./Final JS/PRIMER ENTREGA/img/c3.jpg"
-          alt="Cartera Azul"
-          class="imagenes"
-        />
-        <p class="parrafo__cartera">Cartera Azul</p>
-        <input type="number" />
+        <img src="img/c3.jpg" alt="Cartera Azul" class="imagenes" />
+        <div class="info__prod">
+          <p class="parrafo__cartera" id="nombre">Cartera Azul</p>
+          <p class="parrafo" id="precio">Precio: $15000</p>
+          <button type="submit" class="boton comprar" id="agregar3">
+            Agregar
+          </button>
+        </div>
       </div>
       <div class="contendor__prod">
-        <img
-          src="./Final JS/PRIMER ENTREGA/img/c4.jpg"
-          alt="Cartera Verde"
-          class="imagenes"
-        />
-        <p class="parrafo__cartera">Cartera Verde</p>
-        <input type="number" />
+        <img src="img/c4.jpg" alt="Cartera Verde" class="imagenes" />
+        <div class="info__prod">
+          <p class="parrafo__cartera" id="nombre">Cartera Verde</p>
+          <p class="parrafo" id="precio">Precio: $15000</p>
+          <button type="submit" class="boton comprar" id="agregar4">
+            Agregar
+          </button>
+        </div>
       </div>
     </div>
-    <div>
-      <h2>Formulario de contacto</h2>
-      <form action="Formulario de contacto">
-        <label for="nombre">Nombre:</label>
-        <input
-          type="text"
-          id="nombre"
-          placeholder="INGRESE SU NOMBRE"
-          required
-        />
-        <label for="apellido">Apellido:</label>
-        <input
-          type="text"
-          id="apellido"
-          placeholder="INGRESE SU APELLIDO"
-          required
-        />
-        <label for="mail">Mail:</label>
-        <input type="text" id="mail" placeholder="INGRESE SU MAIL" required />
-        <label for="pregunta">Pregunta:</label>
-        <input type="textarea" />
-        <input type="submit" name="enviar" id="enviar" value="Enviar" />
-        <input type="reset" value="Eliminar todo" />
-      </form>
-    </div>
-    <script src="condi.js"></script>
+    <script src="index.js"></script>
+    <!-- <script src="js/condi.js"></script> -->
   </body>
 </html>
